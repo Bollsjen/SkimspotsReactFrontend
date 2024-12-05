@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,9 +20,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        <div className="">
-          {children}
-        </div>
+        {children}
+        <Footer className="mt-8" />
       </body>
     </html>
   );

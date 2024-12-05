@@ -33,7 +33,7 @@ export default function Navbar({className = ''}: NavbarProps){
 
     return (
         <Disclosure as="nav" className={classNames(
-            "fixed w-full top-0 left-0 h-auto bg-gray-800 sm:transition-all sm:duration-200",
+            "fixed w-full top-0 left-0 h-auto bg-zinc-700 sm:transition-all sm:duration-200 z-1",
             isScrolled ? 'sm:bg-opacity-100' : 'sm:bg-opacity-50',
             className
         )}>
