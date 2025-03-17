@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import CookieConsent from "../components/CookieConsent";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,10 +19,11 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body>
+      <body className="relative">
         <Navbar />
         {children}
         <Footer className="mt-8" />
+        <CookieConsent />
       </body>
     </html>
   );
