@@ -1,6 +1,6 @@
 'use client'
 
-import Container from "../components/Container"
+import Container from "@/components/Container"
 import Card from '@/components/Card'
 import { MagnifyingGlassIcon } from "@heroicons/react/16/solid"
 import { useEffect, useState } from "react"
