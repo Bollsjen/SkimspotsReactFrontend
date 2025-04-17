@@ -1,3 +1,5 @@
+'use client'
+
 interface ContainerProps {
     className?: string;
     children: React.ReactNode;

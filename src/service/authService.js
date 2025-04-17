@@ -1,7 +1,11 @@
 import axios from '@/utils/axios.js'
 
 export const authService = {
-    getUserObject(){
-        return axios.get(`auth/`)
-    }
+    verify(){
+        return axios.get(`auth/verify`)
+    },
+    
+    login(user){
+        return axios.post(`auth/login`, user)
+    },
 }
