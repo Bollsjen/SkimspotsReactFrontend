@@ -13,30 +13,30 @@ export default function Home() {
     const [mostWatchedSkimspots, setMostWatchedSkimspots] = useState([])
 
     useEffect(() => {
-        skimspotService.getSorted('age', 3)
-            .then(result => {
-                setLastAddedSkimspots(result.data)
-            })
+        //skimspotService.getSorted('age', 3)
+        //    .then(result => {
+        //        setLastAddedSkimspots(result.data)
+        //    })
 
-        skimspotService.getSorted('rating', 6)
-            .then(result => {
-                setTop6Skimspots(result.data)
-            })
+        //skimspotService.getSorted('rating', 6)
+        //    .then(result => {
+        //        setTop6Skimspots(result.data)
+        //    })
 
-        skimspotService.getSorted('views', 3)
-            .then(result => {
-                setMostWatchedSkimspots(result.data)
-            })
+        //skimspotService.getSorted('views', 3)
+        //    .then(result => {
+        //        setMostWatchedSkimspots(result.data)
+        //    })
     }, [])
 
     return (
       <div className="w-full">
         {/* Video Container */}
-        <div className="relative w-full h-[80vh] -z-10"> {/* h-[80vh] makes it 80% of viewport height - adjust this value as needed */}
+        <div className="relative w-full h-[80vh]"> {/* h-[80vh] makes it 80% of viewport height - adjust this value as needed */}
           <video
             className="absolute w-full h-full object-cover"
             autoPlay
-            muted
+           muted
             loop
           >
             <source src="/video/homevideo.mp4" type="video/mp4" />
@@ -61,6 +61,7 @@ export default function Home() {
                         title="Vester Strand"
                         type="Flatland"
                         location="Denmark, Europe"
+                        uuid="vester-strand"
                         rating={5}
                         tags={['Beach', 'sand', 'Beach', 'sand', 'Beach', 'sand', 'Beach', 'sand', 'Beach', 'sand', 'Beach', 'sand']}
                     />

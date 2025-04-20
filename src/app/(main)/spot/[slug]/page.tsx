@@ -5,7 +5,7 @@ export default async function Spot({params,}: { params: { slug: string } })
   {
     const { slug } = params
     return (
-      <Container className="mt-24 h-screen">
+      <Container className="mt-24">
         <SpotPage slug={slug} id={null} />
       </Container>
     )

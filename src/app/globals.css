@@ -13,3 +13,8 @@ body, html {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--background);
 }
+
+.spot-page-image {
+  object-fit: cover;
+  width: 100%;
+}
