@@ -4,9 +4,19 @@ import SpotPage from "@/components/page/SpotPage"
 export default async function Spot({params,}: { params: { slug: string } }) 
   {
     const { slug } = params
-    return (
-      <Container className="mt-24">
-        <SpotPage slug={slug} id={null} />
-      </Container>
-    )
+
+    if(slug && slug.length > 0){
+      return (
+        <Container className="mt-24">
+          <SpotPage slug={slug} id={null} />
+        </Container>
+      )
+    }
+    else {
+      return (
+        <Container>
+          <h1>No slug</h1>
+        </Container>
+      )
+    }
   }

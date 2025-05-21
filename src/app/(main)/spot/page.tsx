@@ -15,7 +15,7 @@ export default function SpotLegacy()
     if(validation !== true) return validation 
 
     return (
-      <Container className="mt-24 h-screen">
+      <Container className="mt-24">
         <SpotPage slug={null} id={id} />
       </Container>
     )
